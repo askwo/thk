@@ -16,11 +16,4 @@ if(empty($_FILES['photo']['name']))
    }
    
 
-    //function printVars($a,$b = ''){
-	//	printf("%d%d\n",$a,$b);
-	//}
-	//printVars(1,2,3);
-	//printf("-------------\n");
-	//printVars(1);
-	//$conn=@mysql_pconnect("113.10.144.2","bugcms_f","821182") or die("数据库连接失败：".mysql_error());
 	?>
