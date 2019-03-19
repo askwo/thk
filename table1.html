@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <title>switch</title>
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <meta name="description" content="564654">
+    <meta name="keywords" content="654654">
+	<style type="text/css">
+	    *{padding:0;margin:0}
+        .table{width:90%;margin:0 auto;border-collapse: collapse;}
+		.table thead{background:#f7f7f7;}
+		.table td{padding:10px 0;text-align:center;border:1px solid #ebebeb;}
+	</style>
+	<script>
+	    window.onload = function() {
+			var obj = document.getElementById("table1");
+			var th = obj.children[0];
+			var tb = obj.children[1];
+            var s = tb.children[0].children;
+			var arr = [];
+			for (var i = 0; i < s.length; i++) {
+                arr.push(s[i].offsetWidth);
+			}
+			console.log(arr);
+            var th_tds = th.children[0].children;
+			window.onscroll = function () {
+			    var scrolltop=document.documentElement.scrollTop||document.body.scrollTop;
+			    //console.log(scrolltop);
+				if (scrolltop > 0) {
+                    th.style.position = "fixed";
+					
+					th.style.width = obj.offsetWidth +"px";
+					th_tds[0].style.width = (arr[0] - 2) + "px";
+					th_tds[1].style.width = (arr[1] - 0) + "px";
+					th_tds[2].style.width = (arr[2] - 0) + "px";
+					th_tds[3].style.width = (arr[3] + 1) + "px";
+					th_tds[4].style.width = (arr[4] - 0) + "px";
+				} else {
+
+				}
+		    }
+			
+		}
+		
+	</script>
+</head>
+<body>
+    <table class="table" id="table1">
+	    <thead>
+	    <tr>
+		    <td>ID</td>
+			<td>IP</td>
+			<td>MAC地址</td>
+			<td>子网掩码</td>
+			<td>操作</td>
+		</tr>
+		</thead>
+		<tbody>
+	    <tr>
+		    <td>1</td>
+			<td>192.168.2.63</td>
+			<td>66:77:99:EE:55:33</td>
+			<td>255.225.555.0</td>
+			<td>删除 修改</td>
+		</tr>
+		<tr>
+		    <td>2</td>
+			<td>192.168.2.63</td>
+			<td>66:77:99:EE:55:33</td>
+			<td>255.225.555.0</td>
+			<td>删除 修改</td>
+		</tr>
+		<tr>
+		    <td>3</td>
+			<td>192.168.2.63</td>
+			<td>66:77:99:EE:55:33</td>
+			<td>255.225.555.0</td>
+			<td>删除 修改</td>
+		</tr>
+		<tr>
+		    <td>4</td>
+			<td>192.168.2.63</td>
+			<td>66:77:99:EE:55:33</td>
+			<td>255.225.555.0</td>
+			<td>删除 修改</td>
+		</tr>
+		<tr>
+		    <td>5</td>
+			<td>192.168.2.63</td>
+			<td>66:77:99:EE:55:33</td>
+			<td>255.225.555.0</td>
+			<td>删除 修改</td>
+		</tr>
+		<tr>
+		    <td>6</td>
+			<td>192.168.2.63</td>
+			<td>66:77:99:EE:55:33</td>
+			<td>255.225.555.0</td>
+			<td>删除 修改</td>
+		</tr>
+		<tr>
+		    <td>7</td>
+			<td>192.168.2.63</td>
+			<td>66:77:99:EE:55:33</td>
+			<td>255.225.555.0</td>
+			<td>删除 修改</td>
+		</tr>
+		<tr>
+		    <td>8</td>
+			<td>192.168.2.63</td>
+			<td>66:77:99:EE:55:33</td>
+			<td>255.225.555.0</td>
+			<td>删除 修改</td>
+		</tr>
+		<tr>
+		    <td>9</td>
+			<td>192.168.2.63</td>
+			<td>66:77:99:EE:55:33</td>
+			<td>255.225.555.0</td>
+			<td>删除 修改</td>
+		</tr>
+		<tr>
+		    <td>10</td>
+			<td>192.168.2.63</td>
+			<td>66:77:99:EE:55:33</td>
+			<td>255.225.555.0</td>
+			<td>删除 修改</td>
+		</tr>
+		<tr>
+		    <td>11</td>
+			<td>192.168.2.63</td>
+			<td>66:77:99:EE:55:33</td>
+			<td>255.225.555.0</td>
+			<td>删除 修改</td>
+		</tr>
+		<tr>
+		    <td>12</td>
+			<td>192.168.2.63</td>
+			<td>66:77:99:EE:55:33</td>
+			<td>255.225.555.0</td>
+			<td>删除 修改</td>
+		</tr>
+		<tr>
+		    <td>13</td>
+			<td>192.168.2.63</td>
+			<td>66:77:99:EE:55:33</td>
+			<td>255.225.555.0</td>
+			<td>删除 修改</td>
+		</tr>
+		<tr>
+		    <td>14</td>
+			<td>192.168.2.63</td>
+			<td>66:77:99:EE:55:33</td>
+			<td>255.225.555.0</td>
+			<td>删除 修改</td>
+		</tr>
+		<tr>
+		    <td>15</td>
+			<td>192.168.2.63</td>
+			<td>66:77:99:EE:55:33</td>
+			<td>255.225.555.0</td>
+			<td>删除 修改</td>
+		</tr>
+		<tr>
+		    <td>16</td>
+			<td>192.168.2.63</td>
+			<td>66:77:99:EE:55:33</td>
+			<td>255.225.555.0</td>
+			<td>删除 修改</td>
+		</tr>
+		<tr>
+		    <td>17</td>
+			<td>192.168.2.63</td>
+			<td>66:77:99:EE:55:33</td>
+			<td>255.225.555.0</td>
+			<td>删除 修改</td>
+		</tr>
+		<tr>
+		    <td>18</td>
+			<td>192.168.2.63</td>
+			<td>66:77:99:EE:55:33</td>
+			<td>255.225.555.0</td>
+			<td>删除 修改</td>
+		</tr>
+		<tr>
+		    <td>19</td>
+			<td>192.168.2.63</td>
+			<td>66:77:99:EE:55:33</td>
+			<td>255.225.555.0</td>
+			<td>删除 修改</td>
+		</tr>
+		<tr>
+		    <td>20</td>
+			<td>192.168.2.63</td>
+			<td>66:77:99:EE:55:33</td>
+			<td>255.225.555.0</td>
+			<td>删除 修改</td>
+		</tr>
+		<tr>
+		    <td>21</td>
+			<td>192.168.2.63</td>
+			<td>66:77:99:EE:55:33</td>
+			<td>255.225.555.0</td>
+			<td>删除 修改</td>
+		</tr>
+		<tr>
+		    <td>22</td>
+			<td>192.168.2.63</td>
+			<td>66:77:99:EE:55:33</td>
+			<td>255.225.555.0</td>
+			<td>删除 修改</td>
+		</tr>
+		<tr>
+		    <td>23</td>
+			<td>192.168.2.63</td>
+			<td>66:77:99:EE:55:33</td>
+			<td>255.225.555.0</td>
+			<td>删除 修改</td>
+		</tr>
+		<tr>
+		    <td>24</td>
+			<td>192.168.2.63</td>
+			<td>66:77:99:EE:55:33</td>
+			<td>255.225.555.0</td>
+			<td>删除 修改</td>
+		</tr>
+		<tr>
+		    <td>25</td>
+			<td>192.168.2.63</td>
+			<td>66:77:99:EE:55:33</td>
+			<td>255.225.555.0</td>
+			<td>删除 修改</td>
+		</tr>
+		<tr>
+		    <td>26</td>
+			<td>192.168.2.63</td>
+			<td>66:77:99:EE:55:33</td>
+			<td>255.225.555.0</td>
+			<td>删除 修改</td>
+		</tr>
+		<tr>
+		    <td>27</td>
+			<td>192.168.2.63</td>
+			<td>66:77:99:EE:55:33</td>
+			<td>255.225.555.0</td>
+			<td>删除 修改</td>
+		</tr>
+		<tr>
+		    <td>28</td>
+			<td>192.168.2.63</td>
+			<td>66:77:99:EE:55:33</td>
+			<td>255.225.555.0</td>
+			<td>删除 修改</td>
+		</tr>
+		<tr>
+		    <td>29</td>
+			<td>192.168.2.63</td>
+			<td>66:77:99:EE:55:33</td>
+			<td>255.225.555.0</td>
+			<td>删除 修改</td>
+		</tr>
+		<tr>
+		    <td>30</td>
+			<td>192.168.2.63</td>
+			<td>66:77:99:EE:55:33</td>
+			<td>255.225.555.0</td>
+			<td>删除 修改</td>
+		</tr>
+		<tr>
+		    <td>31</td>
+			<td>192.168.2.63</td>
+			<td>66:77:99:EE:55:33</td>
+			<td>255.225.555.0</td>
+			<td>删除 修改</td>
+		</tr>
+		<tr>
+		    <td>32</td>
+			<td>192.168.2.63</td>
+			<td>66:77:99:EE:55:33</td>
+			<td>255.225.555.0</td>
+			<td>删除 修改</td>
+		</tr>
+		</tbody>
+	</table>
+    
+</body>
+</html>
