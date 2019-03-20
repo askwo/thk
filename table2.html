@@ -33,13 +33,16 @@
 			var tb = obj.children[1];
             var s = tb.children[0].children;
 			var arr = [];
+            var arr2 = [];
             var thd = th.children[0].children;
             th.style.width = (tb.offsetWidth -0) + "px";
 			for (var i = 0; i < s.length; i++) {
                 arr.push(s[i].clientWidth);
+                arr2.push(window.getComputedStyle(s[i], null).width);
                 thd[i].style.width = (s[i].clientWidth+0) + "px";
 			}
             console.log(arr);
+            console.log(arr2);
             
 			
 		}

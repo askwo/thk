@@ -14,6 +14,4 @@ if(empty($_FILES['photo']['name']))
     $path='uploadfile/'.$newpicname;
     $ups=move_uploaded_file($_FILES['photo']['tmp_name'],$path);
    }
-   
-
-	?>
+ 	?>
