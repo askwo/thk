@@ -6,134 +6,19 @@
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <meta name="description" content="564654">
     <meta name="keywords" content="654654">
+    <script src="js/react.development.js"></script>
+    <script src="js/react-dom.development.js"></script>
+    <script src="js/babel.min.js"></script>
     <style type="text/css">
         *{padding:0;margin:0}
-        /*隐藏掉我们模型的checkbox*/
-        .my_selectbox .input_chk_box {appearance: none;-webkit-appearance: none;outline: none;display: none;}
-        /*未选中时*/        
-        .my_selectbox .input_chk_box+span {
-                width: 16px;
-                height: 16px;
-                display: inline-block;
-                background: url(images/check.png) no-repeat;
-                background-position-x: 0px;
-                background-position-y: -18px;
-                position: relative;
-            }
-        
-        /*选中checkbox时,修改背景图片的位置*/            
-        .my_selectbox .input_chk_box:checked+span {background-position: 0 0;}
-        
-        .styled-select select {
-            background: transparent;
-            padding: 5px;
-            font-size: 14px;
-            border: 1px solid #E7E9EB;
-            height: 32px;
-            -webkit-appearance: none; /*for chrome*/
-}
-
-select {
-  /*Chrome和Firefox里面的边框是不一样的，所以复写了一下*/
-  border: solid 1px #E7E9EB;
-  height:32px;
- 
-  /*很关键：将默认的select选择框样式清除*/
-  appearance:none;
-  -moz-appearance:none;
-  -webkit-appearance:none;
- 
-  /*在选择框的最右侧中间显示小箭头图片*/
-  background: url("images/xiala.png") no-repeat scroll right center transparent;
- 
- color:#47A1FF;
-  /*为下拉小箭头留出一点位置，避免被文字覆盖*/
-  padding:0 25px 0 5px;
-}
-
- 
- 
-/*清除ie的默认选择框样式清除，隐藏下拉箭头*/
-select::-ms-expand { display: none; }
-
-.input50{border: solid 1px #E7E9EB;width:50px;height:30px;color:#47A1FF;padding:0 5px;}
-  
-.pagebox{background:#F3F5F8;font-size:12px;padding:10px 0;
-    display:box;display: -webkit-box;display:-moz-box;
-}
-.pagebox .tz{padding-left:20px;color:#333;}
-.pagebox .inptxt{width:30px;height:26px;padding:0 3px;border:1px solid #ccc;}
-.pagebox .okbtn{width:30px;height:28px;border:none;background:#232E3D;color:#fff;cursor: pointer}
-.pagebox .pages{text-align: center;
-    box-flex:1;
-    -moz-box-flex: 1;
-	-webkit-box-flex: 1;
-}
-.pagebox .pages .xh{padding:0;
-    display: inline-block;line-height: 28px;color:#fff;font-size:14px;font-family: Arial;
-    width:28px; height:28px;background: #232E3D;margin:0 2px;
-
-}
-.pagebox .pages a{display: block;color:#fff;text-decoration: none;}
-.pagebox .pages .font12{font-size:12px;line-height: 30px;}
-.pagebox .total{text-align: right;padding:5px 20px 0 0;
-    background: #ccc; vertical-align: middle;
-}
-.pagebox .pages .cur{background: #54A5FA;}
+        .box{background: #ebebeb;}
+        .box h1{font-size:18px;}
+        .box p{font-size:14px;color:#999}
     </style>
 </head>
 <body>
-    <div style="width:500px;margin:50px auto;">
-        <label class="my_selectbox">
-            <input class="input_chk_box" type="checkbox" name="selTels" value="6666" />
-            <span></span>
-        </label>
-        <label class="my_selectbox">
-            <input class="input_chk_box" type="checkbox" name="selTels" value="6666" />
-            <span></span>
-        </label>
-        <label class="my_selectbox">
-            <input class="input_chk_box" type="checkbox" name="selTels" value="6666" />
-            <span></span>
-        </label>
-
-    </div>
-
-    <div style="width:500px;margin:50px auto;">
-        
-            <select>
-                <option>Here is the first option</option>
-                <option>The second option</option>
-            </select>
-
-            <select>
-                <option>1G</option>
-                <option>2G</option>
-                <option>3G</option>
-            </select>
-
-            <input type="text" class="input50" value="11520" />
-        
-
-    </div>
-
-    <div style="width:100%;margin:50px auto;">
-        <div class="pagebox">
-            <div class="tz">
-                跳转到 <input type="text" class="inptxt" /> <button type="button" class="okbtn">OK</button>
-            </div>
-            <div class="pages">
-                <div class="xh font12">&lt;&lt;</div>
-                <div class="xh font12">&lt;</div>
-                <div class="xh"><a href="">1</a></div>
-                <div class="xh cur"><a href="">2</a></div>
-                <div class="xh"><a href="">3</a></div>
-                <div class="xh font12">&gt;</div>
-                <div class="xh font12">&gt;&gt;</div>
-            </div>
-            <div class="total">共4页，每页20条</div>
-        </div>
-    </div>
+    <div id="example"></div>
     
+    <script type="text/babel" src="js/testjsx.js"></script>
 </body>
 </html>

@@ -16,6 +16,16 @@
         .tab td{border:1px solid #ff6600;padding:10px 0}
 	</style>
 	<script>
+        //'use strict';
+    function facrach(n) {
+        console.log(this);
+        if (n <= 1) {
+            return 1;
+        } else {
+            return n*facrach(n-1);
+        }
+    }
+    console.log(facrach(3));
 	   window.onload = function () {
         createTable(2, 2);
        }
@@ -23,6 +33,8 @@
        //方法二。通过表格原生的方法创建生成表格，更简洁
         function createTable(rows_count, cells_count) {
             var table = document.createElement("table");
+            
+            
             table.className = "tab";
             var thead = table.createTHead();
             var tbody = table.createTBody();
