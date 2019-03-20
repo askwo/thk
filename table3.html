@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <title>menu</title>
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <meta name="description" content="564654">
+    <meta name="keywords" content="654654">
+	<style type="text/css">
+        *{padding:0;margin:0}
+        body{font-size:14px;}
+        .menu{width:50%;margin:100px auto;background:#dbdbdb;height:1600px;}
+        .top{position: fixed;width:50%;height:50px;background: #999;margin-left:-10px;}
+        .tab{width:200px;border-collapse: collapse}
+        .tab thead{background:#dbdbdb;}
+        .tab td{border:1px solid #ff6600;padding:10px 0}
+	</style>
+	<script>
+	   window.onload = function () {
+        createTable(2, 2);
+       }
+       //方法一1一步步创建table,tr,td生成表格
+       //方法二。通过表格原生的方法创建生成表格，更简洁
+        function createTable(rows_count, cells_count) {
+            var table = document.createElement("table");
+            table.className = "tab";
+            var thead = table.createTHead();
+            var tbody = table.createTBody();
+            thead.insertRow(0);
+            thead.rows[0].insertCell(0);
+            thead.rows[0].insertCell(1);
+            for (var i = 0; i < rows_count; i++) {
+                tbody.insertRow(i);
+                for (var j = 0; j < cells_count; j++) {
+                    tbody.rows[i].insertCell(j);
+                    //table.rows[i].cells[j].innerHTML = "&nbsp;";
+                }
+            }
+            document.body.appendChild(table);
+        }
+       
+       
+	</script>
+</head>
+<body>
+    
+    <table class="tab">
+        <tr>
+            <td></td>
+        </tr>
+    </table>
+</body>
+</html>
